@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/rojo"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Biblioteca"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/rojo"
+        android:text="ID"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="34567812"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/rojo"
+        android:drawableStart="@drawable/baseline_menu_book_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="NOMBRE DEL LIBRO"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/rojo"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Damian"
+        android:textColor="@color/rojo"
+        android:minHeight="48dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="VALOR"
+        
+        android:textColor="@color/rojo"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etvalue"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="10.000"
+        android:gravity="center"
+        android:drawableStart="@drawable/baseline_attach_money_24"
+        />
+    <CheckBox
+        android:id="@+id/cCheck"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Disponible"
+        android:textColor="@color/rojo"
+        android:layout_marginTop="15dp"
+        android:checked="false"
+
+        />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ibSave"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/azulClaro"
+            android:padding="20dp"
+            android:src="@drawable/baseline_save_24" />
+
+        <ImageButton
+            android:id="@+id/ibSearch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+            android:background="@color/AMARILLO"
+            android:src="@drawable/baseline_search_24"
+            android:padding="20dp"/>
+
+
+        <ImageButton
+            android:id="@+id/ibEdit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/AZUL"
+            android:padding="20dp"
+            android:src="@drawable/baseline_edit_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="100dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            android:background="@color/morado"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
